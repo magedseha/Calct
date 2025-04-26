@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalcIt - Web Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <div class="title-section">
+      <h1 class="title">CalcIt</h1>
+      <p class="subtitle">Your Smart Scientific Calculator</p>
+    </div>
+    <div class="calculator-section">
+      <div class="calculator">
+        <div class="calculator-display" role="textbox" aria-label="Calculator Display">0</div>
+        <div class="calculator-separator"></div>
+        <div class="calculator-buttons">
+          <button class="calculator-button" onclick="handleButtonClick('C')">C</button>
+          <button class="calculator-button" onclick="handleButtonClick('DEL')">DEL</button>
+          <button class="calculator-button" onclick="handleButtonClick('√')">√</button>
+          <button class="calculator-button" onclick="handleButtonClick('^')">^</button>
+          
+          <button class="calculator-button function" onclick="handleButtonClick('sin')">sin</button>
+          <button class="calculator-button function" onclick="handleButtonClick('cos')">cos</button>
+          <button class="calculator-button function" onclick="handleButtonClick('tan')">tan</button>
+          <button class="calculator-button" onclick="handleButtonClick('/')">/</button>
+          
+          <button class="calculator-button" onclick="handleButtonClick('7')">7</button>
+          <button class="calculator-button" onclick="handleButtonClick('8')">8</button>
+          <button class="calculator-button" onclick="handleButtonClick('9')">9</button>
+          <button class="calculator-button" onclick="handleButtonClick('*')">*</button>
+          
+          <button class="calculator-button" onclick="handleButtonClick('4')">4</button>
+          <button class="calculator-button" onclick="handleButtonClick('5')">5</button>
+          <button class="calculator-button" onclick="handleButtonClick('6')">6</button>
+          <button class="calculator-button" onclick="handleButtonClick('-')">-</button>
+          
+          <button class="calculator-button" onclick="handleButtonClick('1')">1</button>
+          <button class="calculator-button" onclick="handleButtonClick('2')">2</button>
+          <button class="calculator-button" onclick="handleButtonClick('3')">3</button>
+          <button class="calculator-button" onclick="handleButtonClick('+')">+</button>
+          
+          <button class="calculator-button function" onclick="handleButtonClick('(')">(</button>
+          <button class="calculator-button" onclick="handleButtonClick('0')">0</button>
+          <button class="calculator-button function" onclick="handleButtonClick(')')">)</button>
+          <button class="calculator-button" onclick="handleButtonClick('.')">.</button>
+          
+          <button class="calculator-button equals" onclick="handleButtonClick('=')">=</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
